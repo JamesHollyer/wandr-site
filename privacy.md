@@ -1,6 +1,6 @@
 # Wandr privacy policy
 
-_Last updated 1 October 2026._
+_Last updated 22 October 2026._
 
 Wandr is a festival companion app that talks to Meshtastic radios. This page explains what the app collects, where it goes, and what you can turn off. Wandr is operated by James Hollyer. Contact: wandr.festival@gmail.com.
 
@@ -27,17 +27,15 @@ Wandr uses a hosted database (Supabase) for accounts, groups and the pack direct
 - your radio's node number, so your friends' apps can tell which radio is yours;
 - your friendships and group memberships, and each group's channel key;
 - festival packs and mesh profiles you publish, which are public to anyone using the app;
-- in a later version, and only for groups that turn it on, stage visits (stage name, arrival and departure times, no coordinates).
+- festivals you create (name, dates, place) and which festival each of your crews is registered for;
+- a camp marker, if you set one: its coordinates and name, shared with the crews you are in;
+- totems you register: name, emoji, photo and the totem radio's node number. People at the same festival may be shown the name and photo as a landmark hint; only your crew sees where it is.
 
-**Your GPS coordinates are not sent to the server.**
+**Your live GPS position is not sent to the server.** The only coordinates stored there are ones you place on purpose: your camp marker and a festival's location.
 
 ## Usage statistics
 
-To understand whether Wandr actually works in the field, the app reports a small amount of anonymous, aggregated information about how it is used: app and OS version, whether a radio connected successfully, the model of radio, how many members a group has, counts of app screens opened, and crash and error reports.
-
-These reports contain no coordinates, no message contents, no contact details, and nothing that identifies you or your radio. They are collected by us and are not shared with advertising networks, data brokers, or other third parties. They are kept for at most 24 months.
-
-**You can turn this off** in Settings, at any time, and the app works identically with it off.
+Wandr currently sends no usage statistics, analytics or crash reports to anyone. If a future version adds them, this page and the app will say so first, and you will be able to turn them off.
 
 ## What we do not do
 
@@ -48,7 +46,7 @@ No advertising. No third-party advertising or tracking SDKs. No selling, renting
 - **Bluetooth**: to connect to your Meshtastic radio.
 - **Location, including in the background**: to point you toward friends, to share your position with your group through the radio, and to record stage visits while the app is in the background. You can stop this at any time with "Stop tracking".
 - **Camera**: to scan channel QR codes.
-- **Photos**: to pick a festival map image.
+- **Photos and camera**: to pick a festival map image, and to photograph a totem you register. Totem photos are stored on our server and shown to people at the same festival.
 
 ## Children
 
