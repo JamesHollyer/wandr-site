@@ -1,14 +1,14 @@
 # Wandr privacy policy
 
-_Last updated 22 October 2026._
+_Last updated 1 November 2026._
 
 Wandr is a festival companion app that talks to Meshtastic radios. This page explains what the app collects, where it goes, and what you can turn off. Wandr is operated by James Hollyer. Contact: wandr.festival@gmail.com.
 
-The short version: your location history stays on your phone, your friends see you only inside groups you joined, and we do not sell anything to anybody.
+The short version: your friends see you only inside groups you joined, your position reaches them over your radio and, when your phone has signal, over the internet, the server forgets positions and messages after 7 days, and we do not sell anything to anybody.
 
 ## What stays on your phone
 
-- **Your GPS track.** Wandr records your position while tracking is on, so it can show which stages you visited. This log never leaves your phone unless you export it yourself.
+- **Your GPS track.** Wandr records your position while tracking is on, so it can show which stages you visited. The full log stays on your phone unless you export it yourself; only your latest position goes to the server, as described below.
 - **Positions heard over the radio.** Positions, battery levels and messages from your friends' radios are stored on your phone only.
 - **Your radio's original settings.** Saved so they can be restored.
 
@@ -31,7 +31,16 @@ Wandr uses a hosted database (Supabase) for accounts, groups and the pack direct
 - a camp marker, if you set one: its coordinates and name, shared with the crews you are in;
 - totems you register: name, emoji, photo and the totem radio's node number. People at the same festival may be shown the name and photo as a landmark hint; only your crew sees where it is.
 
-**Your live GPS position is not sent to the server.** The only coordinates stored there are ones you place on purpose: your camp marker and a festival's location.
+## What goes over the internet
+
+Not everyone has a radio, and radios do not always reach each other. So when your phone has a data connection, Wandr also sends through our server:
+
+- **your latest position** (coordinates, accuracy and time), so crew members without a radio, or out of radio range, can see where you are. Phones with a radio also pass along the positions they hear from crew members over the radio, so a friend without a radio sees the whole crew as long as one phone has signal;
+- **crew chat messages**, so they reach crew members who are not on the radio.
+
+Only people who share a crew with you can read your position or messages. The server keeps positions and messages for **7 days** and then deletes them. The full history stays on your phone, and nowhere else.
+
+You can turn position sharing over the internet off in Settings ("Share over the internet"). Your position then goes out only over your radio. Chat you send in a crew room is always delivered by whichever route works.
 
 ## Usage statistics
 
@@ -44,7 +53,7 @@ No advertising. No third-party advertising or tracking SDKs. No selling, renting
 ## Permissions
 
 - **Bluetooth**: to connect to your Meshtastic radio.
-- **Location, including in the background**: to point you toward friends, to share your position with your group through the radio, and to record stage visits while the app is in the background. You can stop this at any time with "Stop tracking".
+- **Location, including in the background**: to point you toward friends, to share your position with your group through the radio and the internet, and to record stage visits while the app is in the background. You can stop this at any time with "Stop tracking".
 - **Camera**: to scan channel QR codes.
 - **Photos and camera**: to pick a festival map image, and to photograph a totem you register. Totem photos are stored on our server and shown to people at the same festival.
 
@@ -62,7 +71,7 @@ Wandr is not intended for children. You must be at least 16 to create an account
 
 ## Retention
 
-Account and group records are kept while your account exists. Usage statistics are kept for at most 24 months. Published packs and mesh profiles remain until you or we remove them.
+Account and group records are kept while your account exists. Positions and chat messages on the server are deleted after 7 days. Usage statistics are kept for at most 24 months. Published packs and mesh profiles remain until you or we remove them.
 
 ## Changes
 
